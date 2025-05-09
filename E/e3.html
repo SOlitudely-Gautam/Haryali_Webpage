@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Arjuna</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(120deg, #d9f0e3, #f5fff9);
+      color: #2c3e50;
+      overflow-x: hidden;
+    }
+
+    header {
+      background: url('https://growbilliontrees.com/cdn/shop/articles/arjuna-tree-grow-billion-trees.jpg?v=1712737730') center/cover no-repeat;
+      height: 45vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      color: #fff;
+      text-shadow: 0 4px 10px rgba(0,0,0,0.4);
+    }
+
+    header::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    header h1 {
+      position: relative;
+      font-size: 3rem;
+      z-index: 2;
+      text-align: center;
+    }
+
+   header h4{
+        font-size: 15px;
+        color: white;
+        padding:0px;
+        margin:0px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav a {
+      padding: 1rem 2rem;
+      text-decoration: none;
+      color: #2c3e50;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #4caf50;
+      color: #fff;
+      border-radius: 50px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.7);
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      width: 350px;
+      backdrop-filter: blur(20px);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 1.5rem;
+    }
+
+    .card-content h2 {
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
+      color: #4caf50;
+    }
+
+    .card-content p {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+
+    /* QR Code Section */
+    .qr-section {
+      background: rgba(255, 255, 255, 0.7);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      border-radius: 20px;
+      width: 350px;
+      padding: 2rem;
+      text-align: center;
+      margin: 0 auto 3rem auto;
+      transition: transform 0.3s ease;
+    }
+
+    .qr-section:hover {
+      transform: translateY(-10px);
+    }
+
+    .qr-section h2 {
+      font-size: 1.8rem;
+      color: #4caf50;
+      margin-bottom: 1rem;
+    }
+
+    .qr-section img {
+      width: 200px;
+      height: 200px;
+      object-fit: contain;
+      margin-bottom: 1rem;
+    }
+
+    .qr-section p {
+      font-size: 1rem;
+      color: #333;
+    }
+
+    footer {
+      background: #4caf50;
+      color: #fff;
+      text-align: center;
+      padding: 1rem 0;
+      margin-top: 3rem;
+      border-top-left-radius: 30px;
+      border-top-right-radius: 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 25px;
+      background-color: #4caf50;
+      color: #fff;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #388e3c;
+    }
+
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Arjuna<br>
+    <span style="font-size: 1rem;">मराठी नाव:अर्जुन </span>&nbsp &nbsp
+    <span style="font-size: 1rem;">हिंदी नाम:अर्जुन </span>&nbsp &nbsp
+     <span style="font-size: 1rem;">संस्कृत नाम:अर्जुन</span>&nbsp &nbsp<br>
+     <audio controls>
+      <source src="C:\Users\Murgakumar Pakkiam\Hariyali\light-instrumental-melody-313329.mp3" type="audio/mpeg">
+  </audio><br>
+    
+  </h1>
+</header>
+
+
+<nav>
+  <a href="#">Home</a>
+  <a href="#">About</a>
+  <a href="#">Plants</a>
+  <a href="#">Contact</a>
+</nav>
+
+<div class="container">
+
+  <div class="card">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/9/94/Fruit_I_IMG_9577.jpg" alt="Baskeria Priponits">
+    <div class="card-content">
+      <h2>Scientific Name</h2>
+      <p><strong> Terminalia arjuna</strong></p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb4GiGiHQCLDovS8OhgFUhFGPqd8MWkoRQgA&s" alt="Useful Parts"  width="3px">
+    <div class="card-content">
+      <h2>Useful Parts</h2>
+      <p> Bark</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://srisaiforestrylive.com/cdn/shop/files/Terminalia-Arjuna-Seeds-for-Planting-SRI-SAI-FORESTRY-4540030.jpg?v=1743877944&width=1445" alt="Uses">
+    <div class="card-content">
+      <h2>Medical Uses</h2>
+      <p>Heart tonic, bone tonic, stops bleeding and heals wounds</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://lalitenterprise.com/cdn/shop/files/Untitleddesign-2024-03-20T180554.480.webp?v=1710939282" alt="Location">
+    <div class="card-content">
+      <h2>Location</h2>
+      <p>Bengal, Bihar, Madhya Pradesh, and other states</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://5.imimg.com/data5/SELLER/Default/2023/9/342727343/IH/PR/PZ/117246671/terminalia-arjuna-plant.jpg" alt="Taste and Potency">
+    <div class="card-content">
+      <h2>Taste & Potency</h2>
+      <p>Taste: कषाय<br> Potency:शीत<br> Metabolic Property:कटु</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://greenverz.com/wp-content/uploads/2023/04/Greenverz_Arjun_tree_001.jpg" alt="Ayurvedic uses">
+    <div class="card-content">
+      <h2>Ayurvedic Uses</h2>
+      <p>Cardiac problems, bone healing, wound healing</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSs0DeO14MDTNUEUxLtq9HprQ-AsHgRqJYWSg&s" alt="Product">
+    <div class="card-content">
+      <h2>Product Name</h2>
+      <p>Arjunarishta</p>
+    </div>
+  </div>
+
+</div>
+
+<!-- QR Code Section -->
+<div class="qr-section">
+  <h2>Scan Me</h2>
+  <img src="" alt="QR Code">
+  <p>Scan this QR code to access detailed information and additional resources.</p>
+</div>
+
+<footer>
+  <p>&copy; 2025 Hariyali Project. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

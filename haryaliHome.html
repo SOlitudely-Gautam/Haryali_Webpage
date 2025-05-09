@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Haryali Foundation</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to right, #2e7d32, #66bb6a);
+      color: #1b1b1b;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .container {
+      background:#fff ;
+      width: 100%;
+      max-width: 1200px;
+      border-radius: 10px;
+      overflow: hidden;
+      padding: 30px;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #1b1b1b;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #66bb6a;
+    }
+
+    .hero {
+      margin-top: 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .hero-text {
+      flex: 1;
+      max-width: 600px;
+    }
+
+    .hero-text h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .hero-text p {
+      font-size: 18px;
+      margin-bottom: 30px;
+      color: #66bb6a;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 20px;
+    }
+
+    .buttons a {
+      padding: 12px 25px;
+      border: none;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s;
+    }
+
+    .explore  {
+      background: #66bb6a;
+      color: #fff;
+    }
+
+    .explore:hover {
+      background: #43a047;
+    }
+
+    .learn {
+      background: #66bb6a;
+      color: #fff;
+    }
+
+    .learn:hover {
+      background: #43a047;
+    }
+
+    .hero-img img {
+      width: 300px;
+      border-radius: 20px;
+      margin-top: 20px;
+    }
+
+    
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h2>Haryali Foundation</h2>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Learn more about your <span style="color:#66bb6a;">Favourite Plant</span></h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, sunt sequi minima qui minus praesentium asperiores veritatis culpa veniam cum vel aliquam unde similique autem quisquam consequatur impedit placeat. Iusto voluptate nulla quibusdam cupiditate.</p>
+        <div class="buttons">
+          <a href="haryaliExplore.html" class="explore">Explore Now</a>
+          <a href="#" class="learn">Learn More about us</a>
+        </div>
+      </div>
+      <div class="hero-img">
+        <img  style="height: 300px; width: 400px;" src="haryaliLogi.jpeg" alt="Plant">
+      </div>
+    </section>
+  </div>
+</body>
+</html>

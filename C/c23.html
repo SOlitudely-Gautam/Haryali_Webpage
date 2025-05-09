@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Wild Basil</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(120deg, #d9f0e3, #f5fff9);
+      color: #2c3e50;
+      overflow-x: hidden;
+    }
+
+    header {
+      background: url('https://cdn.kingcounty.gov/-/media/king-county/depts/dnrp/nature-recreation/environment-ecology-conservation/noxious-weeds/wild-basil/carpet.jpg?rev=1d80b5aea7ee4f7b865a796128d0ad7d&la=en&h=748&w=1843&hash=B472E00810D4A772CEAFC18F2C5EA8D4') center/cover no-repeat;
+      height: 45vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      color: #fff;
+      text-shadow: 0 4px 10px rgba(0,0,0,0.4);
+    }
+
+    header::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    header h1 {
+      position: relative;
+      font-size: 3rem;
+      z-index: 2;
+      text-align: center;
+    }
+
+   header h4{
+        font-size: 15px;
+        color: white;
+        padding:0px;
+        margin:0px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav a {
+      padding: 1rem 2rem;
+      text-decoration: none;
+      color: #2c3e50;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #4caf50;
+      color: #fff;
+      border-radius: 50px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.7);
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      width: 350px;
+      backdrop-filter: blur(20px);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 1.5rem;
+    }
+
+    .card-content h2 {
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
+      color: #4caf50;
+    }
+
+    .card-content p {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+
+    /* QR Code Section */
+    .qr-section {
+      background: rgba(255, 255, 255, 0.7);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      border-radius: 20px;
+      width: 350px;
+      padding: 2rem;
+      text-align: center;
+      margin: 0 auto 3rem auto;
+      transition: transform 0.3s ease;
+    }
+
+    .qr-section:hover {
+      transform: translateY(-10px);
+    }
+
+    .qr-section h2 {
+      font-size: 1.8rem;
+      color: #4caf50;
+      margin-bottom: 1rem;
+    }
+
+    .qr-section img {
+      width: 200px;
+      height: 200px;
+      object-fit: contain;
+      margin-bottom: 1rem;
+    }
+
+    .qr-section p {
+      font-size: 1rem;
+      color: #333;
+    }
+
+    footer {
+      background: #4caf50;
+      color: #fff;
+      text-align: center;
+      padding: 1rem 0;
+      margin-top: 3rem;
+      border-top-left-radius: 30px;
+      border-top-right-radius: 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 25px;
+      background-color: #4caf50;
+      color: #fff;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #388e3c;
+    }
+
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Wild Basil
+   <br>
+    <span style="font-size: 1rem;">मराठी नाव:ओसाथी तळुस</span>&nbsp &nbsp
+    <span style="font-size: 1rem;">हिंदी नाम:काली तुलसी</span>&nbsp &nbsp
+     <span style="font-size: 1rem;">संस्कृत नाम:सर्ज्याुर्ज्या</span>&nbsp &nbsp<br>
+     <audio controls>
+      <source src="C:\Users\Murgakumar Pakkiam\Hariyali\light-instrumental-melody-313329.mp3" type="audio/mpeg">
+  </audio><br>
+    
+  </h1>
+</header>
+
+
+<nav>
+  <a href="#">Home</a>
+  <a href="#">About</a>
+  <a href="#">Plants</a>
+  <a href="#">Contact</a>
+</nav>
+
+<div class="container">
+
+  <div class="card">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Clinopodium_vulgare_inflorescence.jpg/500px-Clinopodium_vulgare_inflorescence.jpg" alt="Indian Aloes">
+    <div class="card-content">
+      <h2>Scientific Name</h2>
+      <p><strong>Ocimum gratissimum</strong></p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://www.ediblewildfood.com/images/wild-basil-pictures/Clinopodium-vulgare.jpg"alt="Useful Parts"  width="3px">
+    <div class="card-content">
+      <h2>Useful part</h2>
+      <p>पाने,  मुळे</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://www.health.com/thmb/C6z7tm4qY0pxlSo1ALItBq0QOOs=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/HDC-Text-Overlay-horiz2-Basil-1da656c85e774172bf66c86f766750c9.jpg" alt="Uses">
+    <div class="card-content">
+      <h2>Uses</h2>
+      <p>प्रतिकारशक्ती वाढवतो, घशाच्या विकारांवर प्रभावी, रक्तशुद्धीकरणासाठी उपयोगी, तणाव कमी करण्यासाठी उपयुक्त</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://botsocscot.wordpress.com/wp-content/uploads/2022/11/calamintha-clinopodium-vulgare.jpg?w=2046" alt="location">
+    <div class="card-content">
+      <h2>Location</h2>
+      <p>सपंर्णू र्णभारतात आढळतो </p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Starr_030202-0053_Ocimum_gratissimum.jpg/500px-Starr_030202-0053_Ocimum_gratissimum.jpg" alt="Taste & Properties">
+    <div class="card-content">
+      <h2>Taste and Potency</h2>
+      <p>Taste:तिखट<br>Potency:उष्ण<br>Metabollic property:पचनवर्धक</p>
+    </div>
+  </div>
+
+</div>
+
+<!-- QR Code Section -->
+<div class="qr-section">
+  <h2>Scan Me</h2>
+  <img src="" alt="QR Code">
+  <p>Scan Me</p>
+</div>
+
+<footer>
+  <p>&copy; 2025 Hariyali Project. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
